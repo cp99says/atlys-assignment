@@ -1,4 +1,4 @@
-from interface import ingest
+from apps.interface import ingest
 import json
 from validate import ValidateDict
 

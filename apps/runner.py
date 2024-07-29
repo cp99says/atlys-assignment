@@ -1,4 +1,5 @@
-from apps import FileJson, WriteToMongo
+from apps.writeToJsonFile import FileJson
+from apps.writeToMongo import WriteToMongo
 
 curent_data_stores = ["FILE", "MONGO"]
 

@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from multiprocessing import Pool
-from runner import Run
+from apps.runner import Run
 
 class Scrape:
     def __init__(self, website_url, n):
@@ -60,6 +60,7 @@ class Scrape:
         for data in self.all_products:
             data['productPrice'] = float(data['productPrice'].lstrip('₹'))
             Run(data=data).ingest()
-            print(data)
+        return len(self.all_products)
+    
 
-Scrape(website_url="https://dentalstall.com/shop/", n=100).format_data()
+

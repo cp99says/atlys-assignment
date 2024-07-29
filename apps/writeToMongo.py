@@ -1,5 +1,5 @@
 from common.db import MongoClient
-from interface import ingest
+from apps.interface import ingest
 from validate import ValidateDict
 
 class WriteToMongo(ingest):
