@@ -49,7 +49,18 @@ Now whenever the job will be run, it first checks in the redis if the price in d
 be used again here to update the data into different data stores as well
 """
 
+"""
+We can use python3 router.py to start the server
+-> curl --location 'http://127.0.0.1:8000/v1' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer BYCVTUVULVHLVJNCFHCXCBLJXNOUIHGCYUBEIUEGUIYL' \
+--data '{
+    "url": "https://dentalstall.com/shop/",
+    "page_no": "1"
+}'
 
+this is the curl request to hit and run the API
+"""
 
 
 if __name__ == "__main__":
